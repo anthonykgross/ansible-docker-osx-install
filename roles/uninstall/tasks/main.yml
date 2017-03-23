@@ -11,11 +11,22 @@
       name: "{{cask_modules}}"
       state: absent
 
+#  - name: Uninstalling Brew Tap dependencies
+#    homebrew_tap:
+#      name: "{{brew_tap_modules}}"
+#      state: absent
+
   - name: Docker machine NFS
     file:
       path: /etc/exports
       state: absent
     become: true
+
+  - name: Removing command in ~/.bash_profile
+    lineinfile:
+      dest: ~/.bash_profile
+      line: docker-machine start
+      state: absent
 
   - name: Removing command in ~/.bash_profile
     lineinfile:
