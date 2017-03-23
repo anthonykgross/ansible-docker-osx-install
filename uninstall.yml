@@ -1,0 +1,7 @@
+- name: Uninstall docker
+  hosts: all
+
+  vars_files:
+    - vars/docker.yml
+  roles:
+    - uninstall

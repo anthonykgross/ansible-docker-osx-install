@@ -1,0 +1,7 @@
+- name: Install docker
+  hosts: all
+
+  vars_files:
+    - vars/docker.yml
+  roles:
+    - install
