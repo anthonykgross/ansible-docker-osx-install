@@ -1,8 +1,3 @@
-brew_modules:
-  - docker-machine-nfs
-
-brew_tap_modules:
-  - caskroom/cask
-
-cask_modules:
-  - docker-toolbox
+brew_modules: docker-machine-nfs
+brew_tap_modules: caskroom/cask
+cask_modules: docker-toolbox

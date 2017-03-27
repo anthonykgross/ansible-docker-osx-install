@@ -33,3 +33,8 @@
       dest: ~/.bash_profile
       line: "eval $(docker-machine env)"
       state: absent
+
+  - name: Docker
+    file:
+      path: ~/.docker
+      state: absent
