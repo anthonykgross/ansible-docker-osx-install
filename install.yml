@@ -1,0 +1,8 @@
+- name: Install docker
+  hosts: localhost
+  connection: local
+
+  vars_files:
+    - vars/docker.yml
+  roles:
+    - install
