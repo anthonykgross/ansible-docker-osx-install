@@ -8,6 +8,7 @@ before_install:
 
 script:
   - ansible-playbook install.yml
+  - ansible-playbook uninstall.yml
 
 notifications:
   email:
