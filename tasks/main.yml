@@ -14,7 +14,7 @@
       state: present
       
   - name: Create VM for Docker
-    shell: docker-machine create --driver virtualbox default
+    shell: docker-machine create --driver virtualbox --virtualbox-memory {{default_virtual_memory}} default
 
   - name: Docker machine NFS
     shell: docker-machine-nfs default -f --nfs-config="-alldirs -maproot=$(id -u):$(id -g)" --mount-opts="actimeo=1"
