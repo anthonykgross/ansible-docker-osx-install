@@ -9,7 +9,7 @@ Example Playbook
 
     - hosts: localhost
       roles:
-         - { role: anthonykgross.docker-mac-install, default_virtual_memory: 2048 }
+         - { role: anthonykgross.docker-osx-install, default_virtual_memory: 2048 }
 
 ## Creator
 **Anthony K GROSS**
